@@ -31,7 +31,7 @@
          <div class="col-lg-2 p-4 mt-4" style="background-color:rgb(8, 8, 8)">
           <h5 style="color: cornsilk;">Sort By</h5>
           <ul class="list-unstyled" style="color: cornsilk;">
-            <li v-for="filter in filters" :key="filter.id" class="d-flex align-items-center justify-content-between">
+           <li v-for="filter in filters" :key="filter.id" class="d-flex align-items-center justify-content-between">
               <label :for="'mf_rdb_'+filter.id">{{filter.name}}</label>
               <input type="radio" name="main-filter" :id="'mf_rdb_'+filter.id" @click="toggleMainFilter(filter)" class="filters mr-2" :checked="filter.checked" />
             </li>
