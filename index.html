@@ -38,7 +38,7 @@
           </ul>
           <hr>
           <ul class="list-unstyled" style="color:cornsilk;">
-            <li v-for="sfilter in secondary_filters" :key="sfilter.id" class="d-flex align-items-center justify-content-between">
+           <li v-for="sfilter in secondary_filters" :key="sfilter.id" class="d-flex align-items-center justify-content-between">
               <label :for="'sf_rdb_'+sfilter.id" >{{sfilter.name}}</label>
               <input type="radio" name="secondary-filter" :id="'sf_rdb_'+sfilter.id" @click="toggleSecondaryFilter(sfilter)" class="filters mr-2" :checked="sfilter.checked"/>
             </li>
